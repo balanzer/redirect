@@ -1,4 +1,4 @@
-package com.ihg.redirect.RedirectController;
+package com.ihg.redirect;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
