@@ -1,0 +1,62 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+
+*.aj            text
+*.cert          text
+*.conf          text
+*.css           text
+*.csv           text
+*.html          text
+*.java          text
+*.js            text
+*.json          text
+*.jsp           text
+*.jspf          text
+*.log           text
+*.md            text
+*.mf            text
+*.pmd           text
+*.properties    text
+*.rb            text
+*.scss          text
+*.sh            text
+*.sql           text
+*.svg           text
+*.tag           text
+*.template      text
+*.tld           text
+*.txt           text
+*.uxf           text
+*.wsdl          text
+*.xml           text
+*.xsd           text
+*.xsl           text
+
+# These files are binary and should be left untouched
+*.cer           binary
+*.class         binary
+*.dll           binary
+*.ear           binary
+*.eot           binary
+*.gif           binary
+*.gz            binary
+*.ico           binary
+*.idx           binary
+*.jar           binary
+*.jpeg          binary
+*.jpg           binary
+*.keystore      binary
+*.otf           binary
+*.png           binary
+*.swf           binary
+*.tar           binary
+*.tbz           binary
+*.tgz           binary
+*.ttf           binary
+*.war           binary
+*.woff          binary
+*.xcf           binary
+*.zip           binary
