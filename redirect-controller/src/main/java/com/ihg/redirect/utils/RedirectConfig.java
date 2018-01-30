@@ -4,6 +4,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Component;
 
 import com.ihg.redirect.config.ConfigProperties;
@@ -16,6 +17,7 @@ public class RedirectConfig {
 	ConfigProperties config;
 	final String DEFAULT_BRAND_CODE = "6c";
 
+	@Cacheable(cacheNames = "brandURL", key = "{#brandCode,#dpReqd}")
 	public String getBrandURL(String brandCode, final boolean dpReqd) {
 		logger.debug("getBrandURL - code={},dp={} ", brandCode, dpReqd);
 		if (StringUtils.isNotEmpty(brandCode)) {
