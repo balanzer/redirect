@@ -23,7 +23,7 @@ public class Redirects {
 	@RequestMapping("/redirect")
 	public void processRedirect(final HttpServletRequest req, final HttpServletResponse resp) throws IOException {
 		RedirectUtils.logAllRequestParams(req);
-		final String redirectURL = this.urlbuilder.buildLandingPageURL(req);
+		final String redirectURL = this.urlbuilder.buildLandingPage(req);
 		RedirectUtils.sendRedirect(redirectURL, resp);
 	}
 }
