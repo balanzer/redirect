@@ -35,11 +35,11 @@ public class RedirectUtils {
 	public static void sendRedirect(final String url, final HttpServletResponse resp) throws IOException {
 		if (StringUtils.isNotEmpty(url)) {
 			logger.debug("Redirect to {}", url);
-			// resp.sendRedirect(url);
+			resp.sendRedirect(url);
 		} else {
 			logger.debug("Redirect to home page");
 			// Redirect to IHG.com home page
-			// resp.sendRedirect(DEFAULT_HOME_PAGE);
+			resp.sendRedirect(DEFAULT_HOME_PAGE);
 		}
 	}
 }

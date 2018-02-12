@@ -36,9 +36,9 @@ public class URLBuilder {
 		final String dp = this.getRequestParameter(req, ParameterNames.DP);
 
 		landingURL.append(this.handleHostName(brandCode, dp));
-		landingURL.append(this.handleBrand());
-		landingURL.append(this.handleLanguage());
-		landingURL.append(this.handleLandingSection());
+		// landingURL.append(this.handleBrand());
+		// landingURL.append(this.handleLanguage());
+		// landingURL.append(this.handleLandingSection());
 
 		return landingURL.toString();
 	}
